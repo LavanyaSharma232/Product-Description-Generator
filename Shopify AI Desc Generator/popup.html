@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Product Description Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Link to the local CSS file -->
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="title">AI DESC GEN</h1>
+            <p class="subtitle">Enter product details to generate a description.</p>
+        </div>
+
+        <!-- Input Form -->
+        <div class="form-group">
+            <div>
+                <label for="productName" class="form-label">Product Name</label>
+                <input type="text" id="productName" class="form-input" placeholder="e.g., Cybernetic Arm Gauntlet">
+            </div>
+            <div>
+                <label for="keywords" class="form-label">Key Features / Keywords</label>
+                <input type="text" id="keywords" class="form-input" placeholder="e.g., plasma-infused, neuro-link, lightweight">
+            </div>
+            <div>
+                 <label for="tone" class="form-label">Tone of Voice</label>
+                 <select id="tone" class="form-input">
+                    <option>Professional</option>
+                    <option>Casual</option>
+                    <option selected>Persuasive</option>
+                    <option>Witty</option>
+                    <option>Luxury</option>
+                    <option>Futuristic</option>
+                 </select>
+            </div>
+        </div>
+
+        <!-- Generate Button -->
+        <button id="generateBtn">
+            <svg id="generateIcon" class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+            <span id="generateBtnText">Generate</span>
+            <svg id="loadingSpinner" class="icon hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+        </button>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="hidden"></div>
+
+        <!-- Result Area -->
+        <div class="output-wrapper">
+            <div class="output-header">
+                <label class="form-label">Generated Description</label>
+                <button id="copyBtn" disabled>
+                    Copy HTML
+                </button>
+            </div>
+            <div id="description-output" class="output-container">
+                <p class="placeholder">Output will be synthesized here...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
+

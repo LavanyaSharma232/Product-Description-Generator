@@ -1,0 +1,224 @@
+:root {
+    --bg-dark: #0a0f1c;
+    --bg-medium: #1a202c;
+    --bg-light: #2d3748;
+    --text-primary: #e2e8f0;
+    --text-secondary: #a0aec0;
+    --neon-cyan: #08d9d6;
+    --neon-pink: #ff2e63;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --futuristic-font: 'Orbitron', sans-serif;
+    --body-font: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    width: 450px;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    padding: 1rem;
+    margin: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(8, 217, 214, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.title {
+    font-family: var(--futuristic-font);
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan);
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    width: 100%;
+    background-color: var(--bg-medium);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+    color: #4a5568;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 15px rgba(8, 217, 214, 0.3);
+}
+
+#generateBtn {
+    width: 100%;
+    background: linear-gradient(45deg, var(--neon-pink), var(--neon-cyan));
+    color: #ffffff;
+    font-family: var(--futuristic-font);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 0.8rem 1rem;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 46, 99, 0.3);
+}
+
+#generateBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(8, 217, 214, 0.5);
+}
+
+#generateBtn:disabled {
+    background: var(--bg-light);
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#generateBtn .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#errorMessage {
+    padding: 0.75rem;
+    background-color: rgba(255, 46, 99, 0.1);
+    border: 1px solid var(--neon-pink);
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.output-wrapper {
+    margin-top: 1rem;
+}
+
+.output-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#copyBtn {
+    font-size: 0.8rem;
+    color: var(--neon-cyan);
+    font-weight: 500;
+    background: none;
+    border: 1px solid var(--neon-cyan);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#copyBtn:hover {
+    background-color: var(--neon-cyan);
+    color: var(--bg-dark);
+}
+
+#copyBtn:disabled {
+    color: #4a5568;
+    border-color: #4a5568;
+    background: none;
+    cursor: not-allowed;
+}
+
+.output-container {
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1rem;
+    min-height: 150px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+.output-container .placeholder {
+    color: var(--text-secondary);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.output-container h3, .output-container h4 {
+    color: var(--neon-cyan);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.output-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.output-container li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.output-container li::before {
+    content: '»';
+    color: var(--neon-pink);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* For the loading spinner */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+#loadingSpinner {
+    animation: spin 1s linear infinite;
+}
