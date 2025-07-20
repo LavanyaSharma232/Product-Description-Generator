@@ -13,7 +13,10 @@ This tool is perfect for e-commerce managers, marketers, and copywriters looking
 
 - Customizable Tone: Choose from multiple tones (e.g., Persuasive, Luxury, Futuristic) to match your brand's voice.
 
-- Keyword Integration: Provide key features or SEO keywords to be seamlessly included in the description.
+- Keyword Integration: Provide key features or SEO keywords to be seamlessly included in the des<img width="742" height="878" alt="Screenshot 2025-07-20 120909" src="https://github.com/user-attachments/assets/5706b321-39a5-4bae-a263-88e866e3d168" />
+<img width="1919" height="867" alt="Screenshot 2025-07-20 121343" src="https://github.com/user-attachments/assets/c1dcf95e-feb1-417d-8db9-8e8061722c00" />
+<img width="1918" height="889" alt="Screenshot 2025-07-20 121305" src="https://github.com/user-attachments/assets/5ca0f64a-642f-4754-a622-a4276478c9be" />
+cription.
 
 - Direct HTML Output: The generated description is rendered directly for a live preview.
 
@@ -42,3 +45,6 @@ This tool is perfect for e-commerce managers, marketers, and copywriters looking
 - Google Gemini API
 
 - Chrome Extension Manifest V3
+<img width="1919" height="867" alt="Extension" src="https://github.com/user-attachments/assets/3442c9b6-a47f-4c19-8554-7a7b2d65768a" />
+<img width="1918" height="889" alt="AI Description Generator" src="https://github.com/user-attachments/assets/5337632c-817e-452c-ac5e-3ff35b4fffc9" />
+<img width="742" height="878" alt="Ai Description Generator" src="https://github.com/user-attachments/assets/851a295a-7585-4c02-9189-5b9e54b7d846" />
