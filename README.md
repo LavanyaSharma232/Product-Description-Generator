@@ -13,10 +13,7 @@ This tool is perfect for e-commerce managers, marketers, and copywriters looking
 
 - Customizable Tone: Choose from multiple tones (e.g., Persuasive, Luxury, Futuristic) to match your brand's voice.
 
-- Keyword Integration: Provide key features or SEO keywords to be seamlessly included in the des<img width="742" height="878" alt="Screenshot 2025-07-20 120909" src="https://github.com/user-attachments/assets/5706b321-39a5-4bae-a263-88e866e3d168" />
-<img width="1919" height="867" alt="Screenshot 2025-07-20 121343" src="https://github.com/user-attachments/assets/c1dcf95e-feb1-417d-8db9-8e8061722c00" />
-<img width="1918" height="889" alt="Screenshot 2025-07-20 121305" src="https://github.com/user-attachments/assets/5ca0f64a-642f-4754-a622-a4276478c9be" />
-cription.
+- Keyword Integration: Provide key features or SEO keywords to be seamlessly included in the description
 
 - Direct HTML Output: The generated description is rendered directly for a live preview.
 
